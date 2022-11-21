@@ -7,15 +7,22 @@
   
   Creation of Jules Wyvern*/
 
+  *{
+    box-sizing: border-box;
+  }
+
   body {
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     background-color: hsl(217, 54%, 11%);
     display: flex;
-    max-width: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+  }
+
+  span{
+    color: white;
   }
 
   .card {
@@ -32,7 +39,13 @@
     align-items: center;
   }
 
+  #title {
+    color: white;
+  }
 
+  #price {
+    color: hsl(178, 100%, 50%);
+  }
 
   #img-nft{
     width: 100%;
