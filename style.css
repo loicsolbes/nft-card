@@ -98,8 +98,7 @@
   }
 
   #solid{
-    background-color: hsl(215, 32%, 27%);
-    border: 2px solid hsl(216, 50%, 16%);
+    border: .5px solid hsl(215, 32%, 27%);
     margin: 0;
 
   }
