@@ -13,12 +13,17 @@
 
   body {
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: hsl(217, 54%, 11%);
     display: flex;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    font-weight: 300;
+  }
+
+  div#info > p {
+    margin: 0;
   }
 
   span{
@@ -29,31 +34,79 @@
     background-color: hsl(216, 50%, 16%);
     color: hsl(215, 51%, 70%);
     border-radius: 1rem;
-    max-width: 400px;
+    max-width: 350px;
     padding: 1.5rem;
   }
 
   .split {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+  
+  /*Selectionne et applique la margin aux éléments qui ont un autre élément à leur gauche*/
+  .split > * + * { 
+    margin-left: .5em;
+  }
+
+  #start.split {
+    justify-content: start;
+  }
+
+  #start.split > * + * {
+    margin-left: 1rem;
+  }
+
+  #price-time.split {
+    font-weight: 400;
+  }
+
+  #img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #img-nft{
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  #view {
+    position: absolute;
+    opacity: 0;
   }
 
   #title {
     color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
   }
 
   #price {
     color: hsl(178, 100%, 50%);
   }
 
-  #img-nft{
-    width: 100%;
-    border-radius: 0.5rem;
+  #solid{
+    background-color: hsl(215, 32%, 27%);
+    border: 2px solid hsl(216, 50%, 16%);
+    margin: 0;
 
   }
 
   #img-avatar {
     border-radius: 50%;
     border: 0.1rem solid white;
+    max-width: 2.25rem;
   }
+
+  #title:hover, span:hover {
+    color: hsl(178, 100%, 50%);
+  }
+
+  #view:hover {
+    opacity: 1;
+  }
+
+  
